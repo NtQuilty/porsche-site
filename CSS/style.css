@@ -1,0 +1,302 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0a0a0a;
+}
+.header{
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: yellow;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    opacity: 0;
+}
+
+.headline .container {
+    max-width: 700px;
+}
+
+.nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.phone{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+}
+
+.menu-item:not(:last-child){
+    padding-right: 30px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.headline{
+    background-color: #f5f5f7;
+    text-align: center;
+    padding: 0px 0 40px;
+}
+
+.title{
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-style: 64px;
+    line-height: 77px;
+    padding-top: 20px;
+}
+
+.headline-img{
+    margin-bottom: 40px;
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+
+.headline-btn{
+    display: inline-block;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    padding: 22px 117px 19px;
+    border-radius: 30px;
+}
+
+.new{
+    padding: 90px 0 100px;
+}
+
+h2{
+    margin: 0 0 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #717171;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+}
+
+.new-info{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.new-text{
+    max-width: 500px;
+    text-align: center;
+}
+
+.new-text p {
+    margin:  0 0 30px;
+}
+
+.new-text b{
+    text-transform: uppercase;
+}
+
+.new-effects{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.scroll{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+img.effects{
+    max-height: 300px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+
+}
+
+.cars-title,
+.cars-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.cars-item img{
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 0 25px;
+    object-fit: cover;
+}
+
+h3,
+.cars-item p{
+    text-align: center;
+}
+
+.contacts-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+
+.contacts-form{
+    padding: 60px 80px 80px 50px;
+    color: #000;
+    text-align: center;
+}
+
+.contacts-inner img{
+    width: 500px;
+    height: 450px;
+    max-width: 550px;
+    border-radius: 20px;
+    /* padding-top: 60px; */
+}
+
+.contacts-title{
+    margin: 0 0 60px;
+    text-transform: uppercase;
+}
+
+.contacts-input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input:required::placeholder {
+    color: #000;
+}
+
+/* input:invalid {
+    border-color: red;
+} */
+
+.hold{
+    text-align: center;
+    opacity: 0.5;
+    margin: 30px 0;
+}
+
+.contacts-form button{
+    border: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;    
+    font-weight: 400px;
+    padding: 16px 80px;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* input:invalid {
+    border: 2px solid red;
+    border-radius: 5px;
+} */
+
+.footer{
+    background-color: #000;
+}
+
+.opacity{
+    opacity: 1;
+}
+
+.footer-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: yellow;
+    font-size: 24px;
+}
+
+.footer-link{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.footer-inner.logo{
+    width: auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 60%;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.success_box, .error_box{
+    display: none;
+}
+
+.error_box {
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

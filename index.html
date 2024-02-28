@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Porsche club SPB</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container opacity">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Фото Мухи</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Шутки Игоряна</a>
+                    </li>
+                </ul>
+                <a class="logo">
+                    <img src="images/porsche-logo.jpg" alt="логотип сайта" class="logo-img">
+                </a>
+                <a href="tel:+7-987-287-91-62" class="phone">+7-987-287-91-62</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="headline">
+            <div class="container">
+                <h1 class="title">PORSCHE CLUB SPB</h1>
+                <div class="slider">
+                    <img src="images/porsche-car.jpg" alt="car" class="headline-img">
+                    <img src="images/porsche-car2.jpg" alt="car2" class="headline-img">
+                    <img src="images/porsche-car3.jpg" alt="car3" class="headline-img">
+                </div>
+                <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
+                <button  class="headline-btn">ВЫБРАТЬ</button>
+            </div>   
+        </section>
+        <section class="new">
+            <div class="container">
+                <h2 class="new-title">ЧТО ПО НОВОСТЯМ</h2>
+                <div class="new-info">
+                    <div class="new-text">
+                    <p>
+                        Игорян вместе с Мухой сходили (без татарина!!!) на форум, итог сей встречи еще не известен. Будем держать вас в курсе!
+                    </p>
+                    <p>
+                        Татарин продолжает изучать верстку. <br>Как он сам говорит: Из-за ебучего ДЖС забыл все, и самое печальное это flex.
+                    </p>
+                    <p>
+                        Муха по прежнему не хочет идти в стрипуху с пацанами, а также переезжать в Грузию. (осуждаем)
+                    </p>
+                    <b>
+                        Дорогие читатели, не употребляйте запрещенные вещества - последствия на фотографии.
+                    </b>
+                    </div>
+                    <div class="new-effects">
+                        <img src="images/effects.jpg" alt="boys" class="effects">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="cars-title">ВЫБЕРИ СВОЮ МОДЕЛЬ</h2>
+                <ul class="cars-list">
+                    <li class="cars-item">
+                        <img src="images/cars1.jpg" alt="Мечтай, уебок">
+                        <h3>Porsche Cayenne</h3>
+                        <p>Для протоукров</p>
+                    </li>
+                    <li class="cars-item">
+                        <img src="images/cars2.jpg" alt="Не твоя, смирись">
+                        <h3>Porsche Taycan</h3>
+                        <p>Для татар</p>
+                    </li>
+                    <li class="cars-item">
+                        <img src="images/cars3.jpg" alt="Порш это не веста">
+                        <h3>Porsche 911</h3>
+                        <p>Для дрочеров</p>
+                    </li>
+                    <li class="cars-item">
+                        <img src="images/cars4.jpg" alt="Даже не смотри">
+                        <h3>Porsche 356</h3>
+                        <p>Для тех, кто ценит историю</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts-inner">
+                    <form name="contacts" action="#" class="contacts-form">
+                        <h2 class="contacts-title">ХОЧЕШЬ НАУЧУ ВЕРСТАТЬ?</h2>
+                        <div class="success_box">"Текст с успешным заполнением формы"</div>
+                        <div class="error_box"></div>
+                        <input name="name" id="name" type="text" class="contacts-input"  required placeholder="Имя*">
+                        <input name="tel" id="tel" type="tel" class="contacts-input" required placeholder="Номер телефона*">
+                        <input name="password" id="password" type="password" class="contacts-input" minlength="7" placeholder="Придумайте пароль">
+                        <input name="password_confirm"  id="password_confirm" type="password" class="contacts-input" placeholder="Повторите пароль">
+                        <input name="email" id="email" type="email" class="contacts-input" required placeholder="Электронная почта*">
+                        <p class="hold">В ближайшее время с вами никто не свяжется</p>
+                        <button type="submit" class="contacts-button">СНАЧАЛА ФОТО ДЖИТИ!</button>
+                    </form>
+                    <img src="images/myha.jpg" alt="">
+                </div>
+            </div> 
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container opacity">
+            <div class="footer-inner">
+                <a href="#" class="footer-link">Политику не обсуждаем</a>
+                <a class="logo">
+                    <img src="images/porsche-logo.jpg" alt="логотип сайта" class="logo-img">
+                </a>
+                <a href="tel:+7-987-287-91-62" class="phone">+7-987-287-91-62</a>
+            </div>
+        </div>
+    </footer>
+    <script src="app/slider.js"></script>
+    <script src="app/scrolling.js"></script>
+    <script src="app/validation3.js"></script>
+</body>
+</html>
