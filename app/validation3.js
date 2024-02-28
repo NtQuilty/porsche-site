@@ -1,6 +1,6 @@
 // Валидации формы: Если данные неправильные - кнопка не активна
 document.querySelector('.contacts-button').addEventListener('click', (event) => {
-    // event.preventDefault(); 
+    event.preventDefault(); 
 
     const contactsInput = document.querySelectorAll('.contacts-input');
     const errorBox = document.querySelector('.error_box');
@@ -32,14 +32,12 @@ document.querySelector('.contacts-button').addEventListener('click', (event) => 
     // Правило для Имени
     let nameValue = document.getElementsByName('name')[0].value;
     let nameRegex = /\d/;
-    if (nameRegex.test(nameValue)) {
-       createElement('Поле Имя должно содержать только буквы')
-    }
+    nameRegex.test(nameValue) ? createElement('Поле Имя должно содержать только буквы') : false
 
     // Проверяем tel
     let telValue = document.getElementsByName('tel')[0].value;
     let phoneRegex = /^(\+7|8)?(\d{10})$/;
-    phoneRegex.test(telValue) ?  true : createElement("Номер телефона невалиден!")
+    !phoneRegex.test(telValue) ?  createElement("Номер телефона невалиден!") : false
 
     // Проверяем email
     let emailValue = document.getElementsByName('email')[0].value;

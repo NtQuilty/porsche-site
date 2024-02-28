@@ -9,7 +9,7 @@ body {
     background-color: #000;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: yellow;
+    color:  #ffd700;
     font-size: 24px;
     line-height: 29px;
 }
@@ -17,7 +17,7 @@ body {
 .container {
     position: relative;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
     opacity: 0;
 }
 
@@ -121,9 +121,6 @@ h2{
     margin:  0 0 30px;
 }
 
-.new-text b{
-    text-transform: uppercase;
-}
 
 .new-effects{
     display: flex;
@@ -139,9 +136,7 @@ h2{
 img.effects{
     max-height: 300px;
     border-radius: 10px;
-    width: 100%;
-    height: auto;
-    max-width: 400px;
+    max-width: 500px;
 
 }
 
@@ -156,14 +151,19 @@ img.effects{
 .cars-item img{
     width: 250px;
     height: 180px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 0 25px;
     object-fit: cover;
 }
 
-h3,
-.cars-item p{
+.cars-item img:hover {
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+h3{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .contacts-inner{
@@ -176,17 +176,14 @@ h3,
 }
 
 .contacts-form{
-    padding: 60px 80px 80px 50px;
+    padding: 60px 100px 30px 50px;
     color: #000;
     text-align: center;
 }
 
 .contacts-inner img{
-    width: 500px;
-    height: 450px;
     max-width: 550px;
     border-radius: 20px;
-    /* padding-top: 60px; */
 }
 
 .contacts-title{
@@ -207,10 +204,6 @@ input:required::placeholder {
     color: #000;
 }
 
-/* input:invalid {
-    border-color: red;
-} */
-
 .hold{
     text-align: center;
     opacity: 0.5;
@@ -227,11 +220,6 @@ input:required::placeholder {
     border-radius: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-/* input:invalid {
-    border: 2px solid red;
-    border-radius: 5px;
-} */
 
 .footer{
     background-color: #000;
